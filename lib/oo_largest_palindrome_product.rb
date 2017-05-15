@@ -1,5 +1,7 @@
 class LargestPalindromeProduct
-  def answer
+  attr_accessor :answer
+
+  def initialize
     product_array = []
     max = 0
 
@@ -18,6 +20,6 @@ class LargestPalindromeProduct
       end
     end
 
-    return max
+    @answer = max
   end
 end
